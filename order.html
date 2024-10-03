@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="This page allows users to order their icecreams">
+  <title>User Registration</title>
+
+  <link rel="stylesheet" type="text/css" href="icestyle.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@700&display=swap" rel="stylesheet">
+
+  <script src="javascript/validationorder.js"></script>
+
+
+</head>
+
+
+<body class="rest2">
+
+<header>
+  <div class="navbar">
+    <img class="logo" src="images/logo2.png" alt="Logo of the website">
+      <ul>
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="index.html">INFORMATION</a></li>
+        <li><a href="registration.html">REGISTRATION</a></li>
+        <li><a href="order.html"class="active">ORDER</a></li>
+        <li><a href="feature.html">FEATURES</a></li>
+      </ul>
+  </div>
+</header>
+
+  <h1 class="orderone">PLACE YOUR ORDER</h1>
+
+
+  <form id="orderform" method="POST" action="http://mercury.swin.edu.au/it000000/cos10005/regtest.php">
+
+   <label for="Name">Customer Name:</label>
+   <input type="text" name="name" id="name">
+
+
+
+    <label for="contact-number">Contact Number:</label>
+    <input type="text" name="contact_number" id="contact-number">
+
+
+
+    <label for="email">Email for Receipt:</label>
+    <input type="email" name="email" id="email">
+
+
+
+    <label for="delivery">Delivery or Pickup:</label>
+    <select name="delivery" id="delivery">
+      <option value="delivery">Delivery</option>
+      <option value="pickup">Pickup</option>
+    </select>
+
+
+
+    <div id="delivery-address">
+      <label for="delivery-address-input">Delivery Address:</label>
+      <input type="text" name="delivery_address" id="delivery-address-input">
+    </div>
+
+
+
+    <div id="billing-address">
+      <label for="billing-address">Billing Address:</label>
+      <input type="text" name="billing_address" id="billing-address">
+    </div>
+
+
+
+    <label for="postcode">Post Code:</label>
+    <input type="text" name="postcode" id="postcode">
+
+
+
+    <label for="payment-method">Pay on Pickup or Online:</label>
+    <select name="payment_method" id="payment-method">
+      <option value="online">Pay Online</option>
+      <option value="pickup">Pay on Pickup</option>
+    </select>
+
+
+    <div id="credit-card-type">
+      <label for="credit-card-type">Credit Card Type:</label>
+        <div>
+          <input type="radio" name="credit_card_type" id="visa" value="visa">
+          <label for="visa">Visa</label>
+
+            <input type="radio" name="credit_card_type" id="mastercard" value="mastercard">
+            <label for="mastercard">Mastercard</label>
+
+            <input type="radio" name="credit_card_type" id="amex" value="americanexpress">
+            <label for="amex">American Express</label>
+      </div>
+  </div>
+
+
+
+
+    <div id="credit-card-info">
+      <label for="credit-card-number">Credit Card Number:</label>
+      <input type="text" name="credit_card_number" id="credit-card-number">
+    </div>
+
+
+
+
+    <input type="submit" value="Place Order">
+
+
+  </form>
+</body>
+<footer class="footer">
+    <p class="footer-text">Life's Sweet with Ice Cream</p>
+    <a href="home.html" id="skip-link">Skip to Home</a>
+
+</footer>
+</html>

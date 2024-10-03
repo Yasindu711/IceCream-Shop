@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="This page allows users to input personal details">
+  <title>User Registration</title>
+
+  <link rel="stylesheet" type="text/css" href="icestyle.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@700&display=swap" rel="stylesheet">
+
+  <script src="javascript/validation.js"></script>
+
+
+</head>
+
+
+<body class="rest2">
+
+<header>
+  <div class="navbar">
+    <img class="logo" src="images/logo2.png" alt="Logo of the website">
+      <ul>
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="index.html">INFORMATION</a></li>
+        <li><a href="registration.html"class="active">REGISTRATION</a></li>
+        <li><a href="order.html">ORDER</a></li>
+        <li><a href="feature.html">FEATURES</a></li>
+      </ul>
+  </div>
+</header>
+
+  <p id="textforreg">PLEASE REGISTER YOU DETAILS BELOW, SO THAT WE CAN GIVE YOU A PERSONALIZED EXPERIENCE</p> <br>
+
+  <form id="regform" method="POST" action="http://mercury.swin.edu.au/it000000/cos10005/regtest.php">
+
+    <fieldset>
+      <legend>PERSONAL INFORMATION</legend>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username">
+
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password">
+
+
+      <label for="gender">Gender:</label>
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label>
+      <input type="radio" id="other" name="gender" value="other">
+      <label for="other">Other</label>
+    </fieldset>
+
+
+    <fieldset>
+      <legend>CONTACT INFORMATION</legend>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email">
+
+
+      <label for="mobile">Mobile Number:</label>
+      <input type="tel" id="mobile" name="mobile">
+    </fieldset>
+
+
+    <fieldset>
+      <label for="icecream">SELECT YOUR FAVORITE ICE CREAM FLAVOR:</label>
+      <select id="icecream" name="icecream">
+
+        <option value="">Choose an option</option>
+        <option value="Chocolate">CHOCO BLISS</option>
+        <option value="Vanilla">PINK DELIGHT</option>
+        <option value="Strawberry">LAVENDER FROST</option>
+        <option value="Cookies&Cream">MANGO TANGO</option>
+      </select>
+    </fieldset>
+
+    <input type="submit" value="Register">
+  </form>
+
+</body>
+<footer class="footer">
+    <p class="footer-text">Life's Sweet with Ice Cream</p>
+    <a href="home.html" id="skip-link">Skip to Home</a>
+
+</footer>
+</html>

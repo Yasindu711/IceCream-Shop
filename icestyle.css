@@ -1,0 +1,328 @@
+body {
+  margin: 0;
+}
+
+
+/*Css below is how i put different background images for different pages*/
+body{
+      background-image: url("images/homepage2.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+     }
+
+    }
+.rest{
+      background-image: url("images/rest.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+
+
+.rest2{
+      background-image: url("images/rest.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+
+.rest3{
+      background-image: url("images/rest.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+
+
+/*Css below is for the sweet life title in thr home page*/
+.title {
+  font-family: 'Signika Negative', sans-serif;
+  font-weight: 600;
+  font-size: 150px;
+  padding-left: 150px;
+  padding-top: 100px;
+  margin: 20px 0;
+  color: #C91D67;
+}
+
+
+.title1 {
+  font-family: 'Signika Negative', sans-serif;
+  font-weight: 700;
+  font-size: 150px;
+   padding-left: 400px;
+  margin: 20px 0;
+}
+
+
+
+
+
+
+
+/*nav bar css*/
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 32px;
+  margin: 0;
+}
+
+.logo {
+  flex: 0 0 auto;
+  width: 100px;
+  height: 100%;
+  margin-right: 10px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  margin-left: auto;
+}
+
+.navbar li {
+  margin-left: 10px;
+}
+
+.navbar a {
+  color: #000;
+  padding: 15px;
+  font-size: 21px;
+  font-family: 'Signika Negative', sans-serif;
+  text-decoration: none;
+  transition: color 0.4s ease;
+  text-decoration: underline;
+}
+
+.navbar a:hover {
+  color: #C91D67;
+}
+
+
+.logo {
+  flex: 0 0 auto;
+  width: 165px; 
+  height: auto; 
+  margin-right: 10px;
+}
+
+/*This css block below shows how i highlighted the page i am in in the nav bar*/
+.navbar a.active {
+  color: #C91D67;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+
+
+
+
+/*css for index page, it includes styling to the text descriptions and also adding styles to the images in the page*/
+
+h2{
+  text-align: center;
+  font-family: 'Signika Negative', sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  color: #333333;
+}
+
+h3 {
+      width: 60%;
+      margin: 18px auto;
+      text-align: justify;
+      font-family: 'Signika Negative', sans-serif;
+      color: #333333;
+    }
+
+.flavors {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      list-style: none;
+      padding: 5px;
+    }
+
+    .flavors li {
+      width: 50%;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .flavors img {
+      width: 270px;
+      height: auto;
+      object-fit: cover;
+
+      border-radius: 22px;
+    }
+
+    .flavors p {
+      margin-top: 10px;
+      font-weight: bold;
+      font-family: 'Signika Negative', sans-serif;
+    }
+
+
+
+
+
+/*Css for the shop location image in the index page*/
+.shop-image {
+  display: block;
+  margin: 0 auto;
+  max-width: 80%;
+  height: auto;
+  margin-top: 50px;
+  margin-bottom: 30px; 
+  border-radius: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+/*css for forms created*/
+#textforreg {
+  font-family: 'Signika Negative', sans-serif;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 22px;
+  font-weight: bold;
+
+}
+
+form {
+  max-width: 520px;
+  padding: 42px;
+  margin: 0 auto;
+  background-color: #F6CCD5;
+  border: 3px solid #C0B6F6;
+  border-radius: 13px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin: 23px auto;
+}
+
+fieldset {
+  border: none;
+  margin-bottom: 22px;
+}
+
+legend {
+  font-weight: bold;
+  font-size: 17px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: 'Signika Negative', sans-serif;
+}
+
+label {
+  display: block;
+  font-size: 17px;
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-family: 'Signika Negative', sans-serif;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+select {
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #F6CCD5;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-size: 14px;
+
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 5px;
+  display: inline-block;
+}
+
+input[type="radio"] + label {
+  display: inline-block;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #AFCAE6;
+  color: #fff;
+  border: none;
+  border-radius: 4.5px;
+  cursor: pointer;
+  font-size: 21px;
+}
+
+input[type="submit"]:hover {
+  background-color: #C0B6F6;
+}
+
+
+
+
+
+
+/*Css for the heading in the order page*/
+h1{
+  font-family: 'Signika Negative', sans-serif;
+
+}
+.orderone{
+  text-align: center;
+}
+
+
+
+
+/*Css for the list created to display the features*/
+.features {
+  display: block;
+  font-family: 'Signika Negative', sans-serif;
+  flex-direction: column;
+  align-items: center;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 5px solid;
+  border-radius: 45px;
+  border-color: #C0B6F6;
+}
+
+.features li {
+  margin-bottom: 10px;
+}
+
+
+
+
+/*Css for the footer of all the pages*/
+.footer{
+  text-align: center;
+  font-family: 'Signika Negative', sans-serif;
+  color:  #C3B1E1;
+
+}
+
+
+
+.skip-link {
+      position: absolute;
+      left: -10000px;
+      top: auto;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip: rect(1px, 1px, 1px, 1px);
+
